@@ -121,6 +121,7 @@ let recette8 = {
     preparation :"ÉTAPE 1 <br/> Faire revenir les oignons coupés fin dans une grande poêle antiadhésive. <br/> ÉTAPE 2 <br/> Ajouter les filets de poisson roulés sur eux-mêmes, les faire revenir doucement 5 à 6 minutes. Saler et poivrer. <br/>ÉTAPE 3 <br/>Ajouter les tomates coupées en petits dés. Cuire à feu doux 5 minutes. <br/>ÉTAPE 4 <br/>Ajouter le lait de coco et le curcuma (facultatif). Laisser mijoter doucement 10 à 15 minutes sans remuer."
 }
 
+recettes=[recette1, recette2, recette3, recette4, recette5, recette6, recette7, recette8];
 
 for (let i = 0; i < recette1.ingredients.length ; i++){
     console.log(recette1.ingredients[i]);
