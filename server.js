@@ -40,6 +40,7 @@ app.get('/page2',(req,res,next)=>{
 
 let recette0 = {
     nomRecette : "monobjet" ,
+    photo:"images/recettes/recette0",
     categorie : "viande",
     ingredients : [["ingredient",100,"g"],["ingredient2",150]],
     preparation :" voici comment préparer la recette"
@@ -52,6 +53,7 @@ let recette3 = {
     preparation :
     "Etape 1 : Hacher les oignons, l'ail et le persil et les mélanger à la viande hachée. <br> Etape 2 : Faire chauffer un peu d'huile d'olive dans une poêle et faire la cuire la farce en remuant souvent, pendant 5 minutes. En fin de cuisson, éteindre le feu et réserver. Mélanger au coulis de tomate. <br> Etape 3 : Faire une béchamel avec le beurre, la farine et le lait. <br> Etape 4 : Beurrer un plat à gratin, disposer une couche de plaques de lasagnes, puis une couche de viande hachée, puis une couche de béchamel. <br> Etape 5 : Terminer par une couche de sauce béchamel. Parsemer de parmesan râpé. <br> Etape 6 : Faire gratiner à four chaud pendant 1/2 heure."
 }
+
 
 
 
