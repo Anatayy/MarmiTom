@@ -48,10 +48,18 @@ let recette0 = {
 
 let recette3 = {
     nomRecette : "Lasagne à la viande" ,
+    photo : "images/recettes/recette3",
     categorie : "viande",
-    ingredients : [["Plaques de lasagnes (précuites)",20,"plaques"],["Oignons",2],["Gousse d'ail",2],["Persil",0.5, "bouquet"],["Farine", 50,"g"],["Beurre",50,"g"],["Lait",0.5,"l"],["Parmesan rapé", 50, "g"],["poivre"],["Sel"],["Viande Hachée", 600,"g"],["Coulis de tomate", 70,"g"]],
-    preparation :
-    "Etape 1 : Hacher les oignons, l'ail et le persil et les mélanger à la viande hachée. <br> Etape 2 : Faire chauffer un peu d'huile d'olive dans une poêle et faire la cuire la farce en remuant souvent, pendant 5 minutes. En fin de cuisson, éteindre le feu et réserver. Mélanger au coulis de tomate. <br> Etape 3 : Faire une béchamel avec le beurre, la farine et le lait. <br> Etape 4 : Beurrer un plat à gratin, disposer une couche de plaques de lasagnes, puis une couche de viande hachée, puis une couche de béchamel. <br> Etape 5 : Terminer par une couche de sauce béchamel. Parsemer de parmesan râpé. <br> Etape 6 : Faire gratiner à four chaud pendant 1/2 heure."
+    ingredients : [["Plaques de lasagnes (précuites)",3.5,"plaques"],["Oignons",0.30],["Gousse d'ail",0.25],["Persil",1, "bouquet"],["Farine", 8.5,"g"],["Beurre",8.5,"g"],["Lait",0.5,"l"],["Parmesan rapé", 8.5, "g"],["poivre"],["Sel"],["Viande Hachée", 100,"g"],["Coulis de tomate", 11.5,"g"]],
+    preparation : "Etape 1 : Hacher les oignons, l'ail et le persil et les mélanger à la viande hachée. <br> Etape 2 : Faire chauffer un peu d'huile d'olive dans une poêle et faire la cuire la farce en remuant souvent, pendant 5 minutes. En fin de cuisson, éteindre le feu et réserver. Mélanger au coulis de tomate. <br> Etape 3 : Faire une béchamel avec le beurre, la farine et le lait. <br> Etape 4 : Beurrer un plat à gratin, disposer une couche de plaques de lasagnes, puis une couche de viande hachée, puis une couche de béchamel. <br> Etape 5 : Terminer par une couche de sauce béchamel. Parsemer de parmesan râpé. <br> Etape 6 : Faire gratiner à four chaud pendant 1/2 heure."
+}
+
+let recette4 = {
+    nomRecette : "Lasagne à la viande" ,
+    photo : "images/recettes/recette4",
+    categorie : "viande",
+    ingredients : [["Moutarde de Dijon",0.5,"c.à.s"],["Beurre",5,"g"],["Huile végétale",0.25,"c.à.s"],["Filet de poulet"],["Echalote",  0.25],["Crème fraiche épaisse",20,"cl"]],
+    preparation : "Etape 1 : Dans une sauteuse, mettre le beurre et l'huile, ajouter l'échalote, faire revenir ajouter les filets de poulet coupés en dés, les laisser revenir 5 min. <br> Etape 2 : Pendant ce temps la mélanger la moutarde et la crème fraîche. <br> Etape 3 : Lorsque le poulet est doré ajouter le mélange et laisser cuire 15 min à feu doux. <br> Etape 4 : Servir avec du riz sauvage."
 }
 
 
