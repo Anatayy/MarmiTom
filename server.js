@@ -35,6 +35,7 @@ let myObject = {
     nom : "monobjet" ,
     valeur : 10
 }
+
     
 
 app.get('/',(req,res,next)=>{
@@ -121,3 +122,6 @@ let recette8 = {
 }
 
 
+for (let i = 0; i < recette1.ingredients.length ; i++){
+    console.log(recette1.ingredients[i]);
+}
