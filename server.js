@@ -45,7 +45,7 @@ app.get('/page1',(req,res,next)=>{
     res.render('page2.ejs',{monobjet:myObject});
 })
 app.get('/liste_recettes',(req,res,next)=>{
-    res.render('liste_recettes.ejs');
+    res.render('liste_recettes.ejs',{marecette:recette1});
 })
 
 
