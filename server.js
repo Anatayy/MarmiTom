@@ -18,8 +18,33 @@ app.get('/',(req,res,next)=>{
 })
 */
 
+/*
 app.get('/',(req,res,next)=>{
     res.sendFile('www/index.html');
 });
 
+*/
+
+app.set('view engine','ejs');
+app.use('/views',express.static(__dirname + '/views'));
+
+
+//passage d'un objet dans la vue de la page 2
+
+let myObject = {
+    nom : "monobjet" ,
+    valeur : 10
+}
+    
+
+app.get('/',(req,res,next)=>{
+    res.render('index.ejs');
+})
+
+app.get('/page1',(req,res,next)=>{
+    res.render('page2.ejs',{monobjet:myObject});
+})
+app.get('/page2',(req,res,next)=>{
+    res.render('page3.ejs',{monobjet:myObject});
+})
 
