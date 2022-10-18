@@ -2,29 +2,35 @@
 
 <%- include ('header'); %>
 
-<h1>Qu'est-ce que je vais manger aujourd'hui ?</h1>
+<h1 class="mt-4 mx-4">Qu'est-ce que je vais manger aujourd'hui ?</h1>
 
-<p>Sélectionne le type de plat qui te tente, on s'occupe du reste.</p>
+<p class="mx-4">Sélectionne le type de plat qui te tente, on s'occupe du reste.</p>
 
-<form action="" method="post">
-    <div class="form-check">
-        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Viande
-        <label class="form-check-label" for="radio1"></label>
-      </div>
-      <div class="form-check">
-        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Poisson
-        <label class="form-check-label" for="radio2"></label>
-      </div>
-      <div class="form-check">
-        <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">Végétarien
-        <label class="form-check-label" for="radio3"></label>
-      </div>
-      <div class="form-check">
-        <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">Poisson
-        <label class="form-check-label" for="radio4"></label>
-      </div>
-      <button type="submit" class="btn btn-success mx-3">J'ai choisi !</button>
-</form>
+<form action="" method="post" class="container mx-4">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Viande
+                <label class="form-check-label" for="radio1"></label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Poisson
+                <label class="form-check-label" for="radio2"></label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">Végétarien
+                <label class="form-check-label" for="radio3"></label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">Poisson
+                <label class="form-check-label" for="radio4"></label>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <button type="submit" class="btn btn-primary my-4">J'ai choisi !</button>
+        </div>
+    </div>
+    </form>
 
 <%- include ('footer'); %>
 
