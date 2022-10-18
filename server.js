@@ -34,8 +34,17 @@ app.get('/page2',(req,res,next)=>{
 
 
 //RECETTES
+// catégories : Viande, poisson, végé, vegan 
 
-let rec1 = {
+// ingrédients en gramme pour 1 personne
+
+let recette0 = {
     nomRecette : "monobjet" ,
-    ingrédients : ["ingredient","ingredient"]
+    categorie : "viande",
+    ingredients : [["ingredient",100,"g"],["ingredient2",150]],
+    preparation :" voici comment préparer la recette"
 }
+
+
+
+
