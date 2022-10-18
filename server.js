@@ -40,10 +40,12 @@ app.get('/page2',(req,res,next)=>{
 
 let recette0 = {
     nomRecette : "monobjet" ,
+    photo:"images/recettes/recette0",
     categorie : "viande",
     ingredients : [["ingredient",100,"g"],["ingredient2",150]],
     preparation :" voici comment préparer la recette"
 }
+
 
 
 
