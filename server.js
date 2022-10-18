@@ -45,7 +45,7 @@ app.get('/page1',(req,res,next)=>{
     res.render('page2.ejs',{monobjet:myObject});
 })
 app.get('/page2',(req,res,next)=>{
-    res.render('page3.ejs',{monobjet:myObject});
+    res.render('recette.ejs',{recettes});
 })
 
 
@@ -121,3 +121,21 @@ let recette8 = {
 }
 
 
+
+
+let recettes =[recette1,recette2,recette3,recette4,recette5,recette6,recette7,recette8];
+
+/*
+//On vient créer un tableau avec toutes les recettes
+let i = 0;
+while (i>=0){
+    if (typeof window["recette"+string(i)] !== 'undefined') {
+        array.push(window["recette"+string(i)])
+    }
+    else{
+        break;
+    }
+}
+
+console.log(recettes);
+*/
