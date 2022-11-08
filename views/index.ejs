@@ -51,6 +51,8 @@
     // Partie affichage de la recette choisie
     let bouton=document.getElementById("submit");
             let zoneNom=document.getElementById("nomRecette");
+            let zoneIngredient=document.getElementById("ingredient");
+            let zonePreparation=document.getElementById("preparation");
 
             bouton.onclick = function(){
 
@@ -73,7 +75,10 @@
 
             //Selection recette et affichage
                 let recette=SelectionRecette(categorie)
+                
                 zoneNom.innerHTML=recette.nomRecette;
+                console.log(recette.ingredients);
+                zoneIngredient.innerHTML=recette.ingredients;
             }
 
 
