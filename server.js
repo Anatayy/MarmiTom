@@ -131,7 +131,7 @@ let recettes=[recette1, recette2, recette3, recette4, recette5, recette6, recett
 // }
 for (let i = 0; i < recettes ; i++){
     for (let o = 0; o < i; o++){
-        console.log(recette1.ingredients[i]);
+        // console.log(recette1.ingredients[i]);
     }
 }
 
