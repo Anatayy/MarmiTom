@@ -109,7 +109,7 @@ let recette7 = {
     nomRecette : "Poisson au curry express" ,
     photo:"img/recettes/recette7.jpeg",
     categorie : "poisson",
-    ingredients : [[0.5,"Curry","Cuillère à soupe"],[0.5,"gousse d'ail"],[0.75,"huile","cuillère à soupe"],["filet de colin",1],[5,"lait de coco","cl"]],
+    ingredients : [[0.5,"Curry","Cuillère à soupe"],[0.5,"gousse d'ail"],[0.75,"huile","cuillère à soupe"],[1,"filet de colin"],[5,"lait de coco","cl"]],
     preparation :"ÉTAPE 1 <br/> Dans une sauteuse ou une poêle, faire chauffer à feu doux l'huile, l'ail pilé et les épices pendant 2 min. <br/> ÉTAPE 2 <br/> Déposer les filets de poisson congelés. Les retourner après 4 min, et verser le lait de coco. <br/>ÉTAPE 3 <br/>Remuer la sauce. <br/>ÉTAPE 4 <br/>C'est prêt !"
 }
 
