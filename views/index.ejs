@@ -52,6 +52,7 @@
     <script>
     // Partie affichage de la recette choisie
     let bouton=document.getElementById("submit");
+    
             let zoneNom=document.getElementById("nomRecette");
             let zoneIngredient=document.getElementById("ingredient");
             let zonePreparation=document.getElementById("preparation");
@@ -73,7 +74,12 @@
                     categorie="végan";
                 }
                 
+
+            //Compteur De personne à implementer
                 console.log("catégorie choisie "+categorie);
+                let compteur=document.getElementById("compteur");
+    
+                compteur=compteur.valueAsNumber;
 
             //Selection recette et affichage
                 let recette=SelectionRecette(categorie)
