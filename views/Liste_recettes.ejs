@@ -12,7 +12,7 @@
                         
                         <div id="recette1" class="collapse"> 
                             
-                            <h3>Ingrédients</h3>
+                            <h3 style="margin-top: 20px">Ingrédients</h3>
                             <ul>
                                 <% for (let i = 0; i < marecette[0].ingredients.length ; i++){   %>      
                                     <li><%=marecette[0].ingredients[i].join(" ")%></li>
@@ -20,8 +20,12 @@
                             </ul>
 
                             <h3>Préparation</h3>
-                            
-                                <%=(marecette[0].preparation)%>
+                            <ul>
+                                <% for (let b = 0; b < marecette[0].preparation.length ; b++){   %>      
+                                    <li class="py-2"><%=marecette[0].preparation[b].join(" ")%></li>
+                               <% }  %>  
+                            </ul>
+                                
                         </div>
                     
                     </div>
@@ -36,7 +40,7 @@
                         
                         <div id="recette2" class="collapse"> 
                             
-                            <h3>Ingrédients</h3>
+                            <h3 style="margin-top: 20px">Ingrédients</h3>
                             <ul>
                                 <% for (let i = 0; i < marecette[1].ingredients.length ; i++){   %>      
                                     <li><%=marecette[1].ingredients[i].join(" ")%></li>
@@ -45,7 +49,11 @@
 
                             <h3>Préparation</h3>
                             
-                                <%=(marecette[1].preparation)%>
+                            <ul>
+                                <% for (let b = 0; b < marecette[1].preparation.length ; b++){   %>      
+                                    <li class="py-2"><%=marecette[1].preparation[b].join(" ")%></li>
+                               <% }  %>  
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -59,7 +67,7 @@
                         
                         <div id="recette3" class="collapse"> 
                             
-                            <h3>Ingrédients</h3>
+                            <h3 style="margin-top: 20px">Ingrédients</h3>
                             <ul>
                                 <% for (let i = 0; i < marecette[2].ingredients.length ; i++){   %>      
                                     <li><%=marecette[2].ingredients[i].join(" ")%></li>
@@ -68,7 +76,11 @@
 
                             <h3>Préparation</h3>
                             
-                                <%=(marecette[2].preparation)%>
+                            <ul>
+                                <% for (let b = 0; b < marecette[2].preparation.length ; b++){   %>      
+                                    <li class="py-2"><%=marecette[2].preparation[b].join(" ")%></li>
+                               <% }  %>  
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -82,7 +94,7 @@
                         
                         <div id="recette4" class="collapse"> 
                             
-                            <h3>Ingrédients</h3>
+                            <h3 style="margin-top: 20px">Ingrédients</h3>
                             <ul>
                                 <% for (let i = 0; i < marecette[3].ingredients.length ; i++){   %>      
                                     <li><%=marecette[3].ingredients[i].join(" ")%></li>
@@ -91,7 +103,11 @@
 
                             <h3>Préparation</h3>
                             
-                                <%=(marecette[3].preparation)%>
+                            <ul>
+                                <% for (let b = 0; b < marecette[3].preparation.length ; b++){   %>      
+                                    <li class="py-2"><%=marecette[3].preparation[b].join(" ")%></li>
+                               <% }  %>  
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -105,7 +121,7 @@
                         
                         <div id="recette5" class="collapse"> 
                             
-                            <h3>Ingrédients</h3>
+                            <h3 style="margin-top: 20px">Ingrédients</h3>
                             <ul>
                                 <% for (let i = 0; i < marecette[4].ingredients.length ; i++){   %>      
                                     <li><%=marecette[4].ingredients[i].join(" ")%></li>
@@ -114,7 +130,11 @@
 
                             <h3>Préparation</h3>
                             
-                                <%=(marecette[4].preparation)%>
+                            <ul>
+                                <% for (let b = 0; b < marecette[4].preparation.length ; b++){   %>      
+                                    <li class="py-2"><%=marecette[4].preparation[b].join(" ")%></li>
+                               <% }  %>  
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -128,7 +148,7 @@
                         
                         <div id="recette6" class="collapse"> 
                             
-                            <h3>Ingrédients</h3>
+                            <h3 style="margin-top: 20px">Ingrédients</h3>
                             <ul>
                                 <% for (let i = 0; i < marecette[5].ingredients.length ; i++){   %>      
                                     <li><%=marecette[5].ingredients[i].join(" ")%></li>
@@ -137,7 +157,11 @@
 
                             <h3>Préparation</h3>
                             
-                                <%=(marecette[5].preparation)%>
+                            <ul>
+                                <% for (let b = 0; b < marecette[5].preparation.length ; b++){   %>      
+                                    <li class="py-2"><%=marecette[5].preparation[b].join(" ")%></li>
+                               <% }  %>  
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -146,12 +170,12 @@
                 <div class="card">
                     <img src="<%=marecette[6].photo%>" alt="" class="card-img-top" style="height : 300px;">
                     <div class="card-body">
-                        <h5 class="card-title"><%=marecette[6].nomRecette%></h5>>
+                        <h5 class="card-title"><%=marecette[6].nomRecette%></h5>
                         <button data-bs-toggle="collapse" class="btn btn-outline-primary btn-sm" data-bs-target="#recette7">Voir la recette</button>
                         
                         <div id="recette7" class="collapse"> 
                             
-                            <h3>Ingrédients</h3>
+                            <h3 style="margin-top: 20px">Ingrédients</h3>
                             <ul>
                                 <% for (let i = 0; i < marecette[6].ingredients.length ; i++){   %>      
                                     <li><%=marecette[6].ingredients[i].join(" ")%></li>
@@ -160,7 +184,11 @@
 
                             <h3>Préparation</h3>
                             
-                                <%=(marecette[6].preparation)%>
+                            <ul>
+                                <% for (let b = 0; b < marecette[6].preparation.length ; b++){   %>      
+                                    <li class="py-2"><%=marecette[6].preparation[b].join(" ")%></li>
+                               <% }  %>  
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -174,7 +202,7 @@
                         
                         <div id="recette8" class="collapse"> 
                             
-                            <h3>Ingrédients</h3>
+                            <h3 style="margin-top: 20px">Ingrédients</h3>
                             <ul>
                                 <% for (let i = 0; i < marecette[7].ingredients.length ; i++){   %>      
                                     <li><%=marecette[7].ingredients[i].join(" ")%></li>
@@ -183,7 +211,11 @@
 
                             <h3>Préparation</h3>
                             
-                                <%=(marecette[7].preparation)%>
+                            <ul>
+                                <% for (let b = 0; b < marecette[7].preparation.length ; b++){   %>      
+                                    <li class="py-2"><%=marecette[7].preparation[b].join(" ")%></li>
+                               <% }  %>  
+                            </ul>
                         </div>
                     </div>
                 </div>
