@@ -41,12 +41,10 @@ let myObject = {
     
 
 app.get('/',(req,res,next)=>{
-    res.render('index.ejs');
+    res.render('index.ejs',{recettes:[recettes]});
 })
 
-app.get('/recette',(req,res,next)=>{
-    res.render('recette.ejs',{recettes:[recettes]});
-})
+
 app.get('/liste_recettes',(req,res,next)=>{
     res.render('liste_recettes.ejs',{marecette:recettes});
 })
