@@ -6,28 +6,31 @@
 
 <p class="mx-4">Sélectionne le type de plat qui te tente, on s'occupe du reste.</p>
 
-<form action="" method="post" class="container mx-4">
+<form action="recette.ejs" method="post" class="container mx-4">
     <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-5">
+            <label for="compteur">Combien de personnes vont manger ?</label>
+            <input type="number" id="compteur" name="compteur" min="1" value="1" class="w-25">
+            <br/><br/>
             <div class="form-check">
-                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Viande
-                <label class="form-check-label" for="radio1"></label>
+                <input type="radio" class="form-check-input" id="viande" name="optradio" value="viande" checked>
+                <label class="form-check-label" for="viande">Viande</label>
             </div>
             <div class="form-check">
-                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Poisson
-                <label class="form-check-label" for="radio2"></label>
+                <input type="radio" class="form-check-input" id="poisson" name="optradio" value="poisson">
+                <label class="form-check-label" for="poisson">Poisson</label>
             </div>
             <div class="form-check">
-                <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">Végétarien
-                <label class="form-check-label" for="radio3"></label>
+                <input type="radio" class="form-check-input" id="vegetarien" name="optradio" value="vegetarien">
+                <label class="form-check-label" for="vegetarien">Végétarien</label>
             </div>
             <div class="form-check">
-                <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">Vegan
-                <label class="form-check-label" for="radio4"></label>
+                <input type="radio" class="form-check-input" id="vegan" name="optradio" value="vegan">
+                <label class="form-check-label" for="vegan">Vegan</label>
             </div>
         </div>
-        <div class="col-sm-4">
-            <button type="submit" class="btn btn-primary my-4">J'ai choisi !</button>
+        <div class="col-sm-5">
+            <button type="submit" class="btn btn-primary my-5">J'ai choisi !</button>
         </div>
     </div>
     </form>
