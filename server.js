@@ -46,7 +46,7 @@ app.get('/page1',(req,res,next)=>{
     res.render('recette.ejs',{monobjet:myObject});
 })
 app.get('/liste_recettes',(req,res,next)=>{
-    res.render('liste_recettes.ejs',{marecette:recette1});
+    res.render('liste_recettes.ejs',{marecette:recettes});
 })
 
 
@@ -124,14 +124,11 @@ let recette8 = {
 let recettes=[recette1, recette2, recette3, recette4, recette5, recette6, recette7, recette8];
 
 //lis toutes les recettes et donnes les ingrédients de tous
-for (let i = 0; i < recettes.length ; i++){
-        console.log (recettes[i].ingredients);
-}
+// for (let i = 0; i < recettes.length ; i++){
+//         console.log (recettes[i].ingredients);
+// }
 
-
-
-
-
+console.log(recettes[1].ingredients);
 /*
 //On vient créer un tableau avec toutes les recettes
 let i = 0;
