@@ -44,7 +44,7 @@ app.get('/',(req,res,next)=>{
     res.render('index.ejs');
 })
 
-app.get('/page1',(req,res,next)=>{
+app.get('/recette',(req,res,next)=>{
     res.render('recette.ejs',{recettes:[recettes]});
 })
 app.get('/liste_recettes',(req,res,next)=>{
