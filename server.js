@@ -81,7 +81,7 @@ let recette3 = {
 }
 
 let recette4 = {
-    nomRecette : "Lasagne à la viande" ,
+    nomRecette : "Poulet au riz et à la crème de curry " ,
     photo : "images/recettes/recette4",
     categorie : "viande",
     ingredients : [["Moutarde de Dijon",0.5,"c.à.s"],["Beurre",5,"g"],["Huile végétale",0.25,"c.à.s"],["Filet de poulet"],["Echalote",  0.25],["Crème fraiche épaisse",20,"cl"]],
