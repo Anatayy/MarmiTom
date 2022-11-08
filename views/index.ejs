@@ -76,9 +76,16 @@
             //Selection recette et affichage
                 let recette=SelectionRecette(categorie)
                 
-                zoneNom.innerHTML=recette.nomRecette;
-                console.log(recette.ingredients);
-                zoneIngredient.innerHTML=recette.ingredients;
+                zoneNom.innerHTML="</br><h2>"+recette.nomRecette+"</h2>";
+                zoneIngredient.innerHTML="<h3>Ingrédients</h3> </br> <ul>";
+                    
+                    for (let i = 0; i < recette.ingredients.length ; i++){        
+                        zoneIngredient.innerHTML+="<li>"+recette.ingredients[i].join(" ")+"</li>";
+                    }  
+                zoneIngredient.innerHTML+="</ul>";       
+                            
+                            
+            
             }
 
 
