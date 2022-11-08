@@ -11,7 +11,14 @@
                         <p class="card-text"></p>
                         <button data-bs-toggle="collapse" class="btn btn-outline-primary btn-sm" data-bs-target="#recette1">Voir la recette</button>
                         
-                        <div id="recette1" class="collapse"> <%=marecette.ingredients%>
+                        <div id="recette1" class="collapse"> 
+                            
+                            <ul>
+                                <% for (let i = 0; i < marecette[0].ingredients.length ; i++){   %>      
+                                    <li><%=marecette[0].ingredients[i] %></li>
+                               <% }  %>  
+                            </ul>
+                            
                         
                         </div>
                     
