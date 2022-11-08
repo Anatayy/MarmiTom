@@ -43,7 +43,7 @@ app.get('/',(req,res,next)=>{
 })
 
 app.get('/page1',(req,res,next)=>{
-    res.render('recette.ejs',{monobjet:myObject});
+    res.render('recette.ejs',{recettes:[recettes]});
 })
 app.get('/liste_recettes',(req,res,next)=>{
     res.render('liste_recettes.ejs',{marecette:recette1});
@@ -129,6 +129,10 @@ for (let i = 0; i < recettes ; i++){
     }
 }
 
+let objRecettes = {
+    nom:"objRecettes",
+    valeur:recettes
+}
 
 
 /*
