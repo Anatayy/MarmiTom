@@ -123,11 +123,12 @@ let recette8 = {
 
 let recettes=[recette1, recette2, recette3, recette4, recette5, recette6, recette7, recette8];
 
-for (let i = 0; i < recettes ; i++){
-    for (let o = 0; o < i; o++){
-        console.log(recette1.ingredients[i]);
-    }
+//lis toutes les recettes et donnes les ingrédients de tous
+for (let i = 0; i < recettes.length ; i++){
+        console.log (recettes[i].ingredients);
 }
+
+
 
 
 
