@@ -7,7 +7,7 @@ app.use('/js', express.static( __dirname + '/node_modules/bootstrap/dist/js') ) 
 app.use('/js', express.static( __dirname + '/node_modules/jquery/dist') ) ;
 app.use('/css', express.static( __dirname + '/node_modules/bootstrap/dist/css') ) ;
 app.use('/img', express.static( __dirname + '/www/img') ) ;
-
+app.use('/static', express.static(__dirname + '/www/css'));
 
 app.listen(port,()=>{
     console.log('le serveur est en route');

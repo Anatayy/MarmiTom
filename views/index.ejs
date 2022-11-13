@@ -3,7 +3,7 @@
 <%- include ('header'); %>
 
 
-
+<div id="containerbody">
 
 
 <h1 class="mt-4 mx-4">Qu'est-ce que je vais manger aujourd'hui ?</h1>
@@ -33,18 +33,18 @@
             </div>
         </div>
         <div class="col-sm-5">
-            <button id="submit" type="button" class="btn btn-primary my-4">J'ai choisi !</button>
+            <button id="submit" type="button" class="btn btn-success my-5 px-4 rounded-pill">J'ai choisi !</button>
         </div>
     </div>
     </form>
 
 
-    <section id="gallery">
+    <section id="recette">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 mb-4">
+                <div class="col-lg-12 mb-4">
                     <div class="card">
-                        <img src="img/recettes/recette6.jpeg" alt="" id="photoPlat" class="card-img-top" style="height : 300px;">
+                        <img src="img/recettes/recette0.jpg" alt="" id="photoPlat" class="card-img-top card-img-top2 img-rounded" style="height : 300px;">
                         <div class="card-body">
                             <h3 class="card-title" id="nomRecette"></h3>
                                 
@@ -63,11 +63,9 @@
         </div>
     </section>
 
-    <div>
-        <p id="nomRecette"></p>
-    </div>
+    
 
-
+</div>
 
 
 
@@ -128,7 +126,15 @@
                     for (let i = 0; i < recette.preparation.length ; i++){        
                         zonePreparation.innerHTML+="<li>"+recette.preparation[i].join(" ")+"</li>";
                     }  
-                zonePreparation.innerHTML+="</ul>";    
+                zonePreparation.innerHTML+="</ul>";  
+                
+                
+
+                //ALLER A LA RECETTE
+
+                var url = location.href;              
+                location.href = "#recette";                 
+                history.replaceState(null,null,url);
             }
 
 
