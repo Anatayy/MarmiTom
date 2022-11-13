@@ -116,7 +116,15 @@
                 zoneIngredient.innerHTML="<ul>";
                     
                     for (let i = 0; i < recette.ingredients.length ; i++){        
+
+                        if(typeof recette.ingredients[i][0] === 'number'){
+                            recette.ingredients[i][0]=recette.ingredients[i][0]*compteur;
+                        }
+
                         zoneIngredient.innerHTML+="<li>"+recette.ingredients[i].join(" ")+"</li>";
+                        console.log(recette.ingredients[i][0]);
+                            
+                        
                     }  
                 zoneIngredient.innerHTML+="</ul>";       
                             
