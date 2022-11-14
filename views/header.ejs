@@ -13,6 +13,11 @@
     <script src="/js/bootstrap.min.js"></script>
 
     <style>
+
+      body{
+        overflow-x:hidden;
+      }
+
       #naviguation{
         margin:auto;
         padding-top:4%;
@@ -22,7 +27,7 @@
 
       #containerbody{
         width:90%;
-        
+        z-index: 1;
         margin:auto;
       }
 
@@ -55,6 +60,16 @@
     #recette .card{
       border-style: none;
     }
+
+    iframe{
+      position:absolute;
+      right:-200px;;
+      top:0;
+      height:100vh;
+      z-index:0;
+    }
+
+    
 
       
     </style>
